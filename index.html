@@ -9,10 +9,7 @@
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 
-		<!-- <script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/oshinewptheme.com\/v3\/wp-includes\/js\/wp-emoji-release.min.js"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script> -->
+	
 		<style type="text/css">
 img.wp-smiley,
 img.emoji {
@@ -94,7 +91,7 @@ body.header-transparent #header-inner-wrap{
 }
 
 /*Adjusted the timings for the new effects*/
-body.header-transparent #header #header-inner-wrap {
+/* body.header-transparent #header #header-inner-wrap {
 	-webkit-transition: background .25s ease, box-shadow .25s ease, opacity 700ms cubic-bezier(0.645, 0.045, 0.355, 1), transform 700ms cubic-bezier(0.645, 0.045, 0.355, 1);
 	-moz-transition: background .25s ease, box-shadow .25s ease, opacity 700ms cubic-bezier(0.645, 0.045, 0.355, 1), transform 700ms cubic-bezier(0.645, 0.045, 0.355, 1);
 	-o-transition: background .25s ease, box-shadow .25s ease, opacity 700ms cubic-bezier(0.645, 0.045, 0.355, 1), transform 700ms cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -103,7 +100,7 @@ body.header-transparent #header #header-inner-wrap {
 
 body.header-transparent.semi #header .semi-transparent{
   background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.41);
-}
+} */
 
 #content,
 #blog-content {
@@ -1882,6 +1879,53 @@ div.bbp-reply-header,
 					};</script>
 </head>
 <body class="home page-template-default page page-id-6 _masterslider _msp_version_3.2.2 header-solid no-section-scroll left-header left-strip-menu be-themes-layout-layout-wide opt-panel-cache-off menu_push_main" data-be-site-layout='layout-wide' data-be-page-template = 'page' >	
+    <div class="stars"></div>
+  <div class="twinkling"></div>
+  
+  <style>@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+  }
+  @-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+  }
+  @-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+  }
+  @-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+  }
+  
+  
+  .stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  }
+  
+  .stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+  }
+  
+  .twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+  
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+  }</style>
 					<div class="be-sidemenu be-sidemenu-left" 
 					data-link-animation-direction = 'r2l'data-menu-alignment = 'center'data-submenu = newMultilevelMenu>
 											<div id="be-sidemenu-content" class="be-sidemenu-content tatsu-wrap">
@@ -1940,10 +1984,11 @@ div.bbp-reply-header,
 
 
 <div class="header-hero-section" id="hero-section"><link href="https://fonts.googleapis.com/css?family=Raleway:500%2C400%2C700%7COpen+Sans:600%2C700" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+  
 
 
+</div> 
 
-</div>
 	<div class="loader page-loader">
 	<div class="loader-style1-wrap"><div class="loader-style1-double-bounce1"></div><div class="loader-style1-double-bounce2"></div></div></div>
 	<a href="#" id="back-to-top" class="layout-wide"><i class="font-icon icon-arrow_carrot-up"></i></a>		</div>
