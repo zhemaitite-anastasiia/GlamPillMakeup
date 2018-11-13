@@ -1888,72 +1888,89 @@ div.bbp-reply-header,
 
 
   <div class="stars">
-   
+     
   </div>
   
   <div class="twinkling">
-
-      <div id="light">
-
-        </div>
-       
-    <img src="other/v3/wp-content/uploads/2014/alina.jpg" style="max-width:600px; height:auto; margin-left:450px;margin-top:100px;opacity:0.30;">
+      <img src="other/v3/wp-content/uploads/2014/alina.jpg" style="max-width:600px; height:auto; margin-left:450px;margin-top:100px;opacity:0.30;"> 
+     
+   
   
   </div>
+  <div class="clouds"></div>
   
  
   
   <style>@keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+      from {background-position:0 0;}
+      to {background-position:-10000px 5000px;}
   }
   @-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+      from {background-position:0 0;}
+      to {background-position:-10000px 5000px;}
   }
   @-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+      from {background-position:0 0;}
+      to {background-position:-10000px 5000px;}
   }
   @-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+      from {background-position:0 0;}
+      to {background-position:-10000px 5000px;}
   }
-  #light {
-    top: 50%;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: rgb(231, 221, 122);
-}
   
-  .stars, .twinkling {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
+  @keyframes move-clouds-back {
+      from {background-position:0 0;}
+      to {background-position:10000px 0;}
+  }
+  @-webkit-keyframes move-clouds-back {
+      from {background-position:0 0;}
+      to {background-position:10000px 0;}
+  }
+  @-moz-keyframes move-clouds-back {
+      from {background-position:0 0;}
+      to {background-position:10000px 0;}
+  }
+  @-ms-keyframes move-clouds-back {
+      from {background-position: 0;}
+      to {background-position:10000px 0;}
+  }
+  
+  .stars, .twinkling, .clouds {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
   }
   
   .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index:0;
+    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index:0;
   }
   
   .twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  z-index:1;
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    z-index:1;
   
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation:move-twink-back 200s linear infinite;
+  }
+  
+  .clouds{
+      background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+      z-index:3;
+  
+    -moz-animation:move-clouds-back 200s linear infinite;
+    -ms-animation:move-clouds-back 200s linear infinite;
+    -o-animation:move-clouds-back 200s linear infinite;
+    -webkit-animation:move-clouds-back 200s linear infinite;
+    animation:move-clouds-back 200s linear infinite;
   }</style>
 					<div class="be-sidemenu be-sidemenu-left" 
 					data-link-animation-direction = 'r2l'data-menu-alignment = 'center'data-submenu = newMultilevelMenu>
@@ -1986,7 +2003,7 @@ div.bbp-reply-header,
 			<header id="header">
     <div id="header-inner-wrap" class=" "  >
                 <div id = "left-header-mobile" class="clearfix">            <div class="logo">
-                <a href="https://oshinewptheme.com/v3"><img class="transparent-logo dark-scheme-logo" src="other/v3/wp-content/uploads/2015/05/oshine-v3-logo.png" alt="Oshine - Version 3" /><img class="transparent-logo light-scheme-logo" src="other/v3/wp-content/uploads/2015/oshine-v3-logo.png" alt="Oshine - Version 3" /><img class="normal-logo" src="other/v3/wp-content/uploads/2015/oshine-v3-logo.png" alt="Oshine - Version 3" /><img class="sticky-logo" src="other/v3/wp-content/uploads/2015/oshine-v3-logo.png" alt="Oshine - Version 3" /></a>            </div>
+                <a href=""><img class="transparent-logo dark-scheme-logo" src="other/v3/wp-content/uploads/2015/05/oshine-v3-logo.png" alt="LoGO" /><img class="transparent-logo light-scheme-logo" src="other/v3/wp-content/uploads/2015/oshine-v3-logo.png" alt="Logo" /><img class="normal-logo" src="other/v3/wp-content/uploads/2015/oshine-v3-logo.png" alt="Logo" /><img class="sticky-logo" src="other/v3/wp-content/uploads/2015/oshine-v3-logo.png" alt="Logo" /></a>            </div>
                         <div class="mobile-nav-controller-wrap">
                 <div class="menu-controls mobile-nav-controller" title="Mobile Menu Controller"><span class="be-mobile-menu-icon style2">   
         <span class="hamburger-line-1"></span>
@@ -2080,7 +2097,7 @@ div.bbp-reply-header,
 
 		        </div>
 
-		    </div>			<script type="text/javascript">
+		    <!-- </div>			<script type="text/javascript">
 				function revslider_showDoubleJqueryError(sliderID) {
 					var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
 					errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
@@ -2089,7 +2106,7 @@ div.bbp-reply-header,
 					errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
 						jQuery(sliderID).show().html(errorMessage);
 				}
-			</script>
+			</script> -->
 			
 <script type='text/javascript' src='other/v3/wp-content/plugins/tatsu/js/vendor/es6-promise.auto.min.js'></script>
 <script type='text/javascript' src='other/v3/wp-content/plugins/tatsu/js/vendor/asyncloader.min.js'></script>
@@ -2115,12 +2132,12 @@ var oshineModulesConfig = {"pluginUrl":"https:\/\/oshinewptheme.com\/v3\/wp-cont
 var oshineThemeConfig = {"vendorScriptsUrl":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/","dependencies":{"asyncloader":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/asyncloader.min.js","backgroundcheck":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/backgroundcheck.min.js","backgroundposition":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/backgroundposition.min.js","classie":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/classie.min.js","easing":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/easing.min.js","fitvids":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/fitvids.min.js","flickity":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/flickity.min.js","fullscreenheight":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/fullscreenheight.min.js","galaxycanvas":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/galaxycanvas.min.js","greensock":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/greensock.min.js","horizontalcarousel":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/horizontalcarousel.min.js","hoverintent":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/hoverintent.min.js","imagesloaded":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/imagesloaded.min.js","isotope":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/isotope.min.js","magnificpopup":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/magnificpopup.min.js","mcustomscrollbar":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/mcustomscrollbar.min.js","modernizr":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/modernizr.min.js","mousewheel":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/mousewheel.min.js","multi_level_menu":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/multi_level_menu.min.js","old_menu_animation":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/old_menu_animation.min.js","page_stack_top":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/page_stack_top.min.js","patterncanvas":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/patterncanvas.min.js","perfect-scrollbar.jquery":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/perfect-scrollbar.jquery.min.js","perspective_navigation":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/perspective_navigation.min.js","request_animation_frame":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/request_animation_frame.min.js","resizetoparent":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/resizetoparent.min.js","scrolltosections":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/scrolltosections.min.js","simplebar":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/simplebar.min.js","simplebar_old":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/simplebar_old.min.js","sticky_sections":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/sticky_sections.min.js","superfish":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/superfish.min.js","transparentheader":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/transparentheader.min.js","waterdropcanvas":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/waterdropcanvas.min.js","webfont":"https:\/\/21g6p436jemo16mo9n1a25yq-wpengine.netdna-ssl.com\/wp-content\/themes\/oshin\/js\/vendor\/webfont.min.js"}};
 /* ]]> */
 </script>
-
+<script type='text/javascript' src='light.js'></script>
 <script type='text/javascript' src='other/v3/wp-content/themes/js/script.min.js'></script>
 <script type='text/javascript' src='other/v3/wp-content/plugins/masterslider/js/jquery.easing.min.js'></script>
 <script type='text/javascript' src='other/v3/wp-content/plugins/masterslider/js/masterslider.min.js'></script>
 <script type='text/javascript' src='other/v3/wp-includes/wp-embeded.min.js'></script>
-<script type='text/javascript' src='light.js'></script>
+
 <!-- Option Panel Custom JavaScript -->
 
 
