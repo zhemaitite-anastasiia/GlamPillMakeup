@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Glam Pill Makeup</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="6;url=main.html" />
+  <meta http-equiv="refresh" content="3;url=main.html" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <script src="main.js"></script>
@@ -19,8 +19,18 @@
 
 
 <header>
-
-    <h1 style="font-size:2vw;color:grey; font-family: 'Merriweather', serif;margin-left:640px;">Glam <br /> Pill <br /> Makeup</h1>
+    <div class="container">
+        <div>
+    <h1 style="font-size:3vw;color:grey; font-family: 'Merriweather', serif;margin-left:640px;max-width:100%;height:auto;">Glam <br /> Pill <br /> Makeup</h1>
+    </div>
+    </div>
+    <style>
+      .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+}
+    </style>
   <div class="overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     <source src="crystal.mp4" type="video/mp4">
