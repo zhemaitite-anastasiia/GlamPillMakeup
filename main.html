@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-	    <title>Glam Pill Makeup</title>
+	    <title>💎Glam Pill Makeup</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
@@ -245,6 +245,16 @@ body.be-themes-layout-layout-border.single-page-version .single-page-nav-wrap {
   body.be-themes-layout-layout-border.single-page-version .single-page-nav-wrap {
     right: 35px;
   }
+  .xop-left{
+    background: url(images/960left.jpg);
+  }
+  .xop-right{
+    background: url(images/960right.jpg);
+  }
+  #motto{
+    display:none;
+  }
+  
   body.be-themes-layout-layout-border-header-top .sb-slidebar.sb-right, 
   body.be-themes-layout-layout-border .sb-slidebar.sb-right {
     right: -280px;
@@ -688,6 +698,26 @@ a.navigation-next-post-link {
     letter-spacing: 0px;
     text-transform: none;;
 }
+@media only screen and (max-width:700px){
+  .xop-left{
+  background: url(images/mobileleft.jpg);
+  background-size: cover;
+    height: 350px;
+    background-position: center;
+    flex: 1;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+.xop-right{
+  background: url(images/mobileright.jpg);
+  background-size: cover;
+    height: 350px;
+    background-position: center;
+    flex: 1;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+}
 
 @media only screen and (max-width : 767px ) {
 
@@ -697,6 +727,7 @@ a.navigation-next-post-link {
   font-size: 30px;
   line-height: 40px;
 }
+
 #hero-section h2,
 .full-screen-section-wrap h2,
 .tatsu-fullscreen-wrap h2 { 
@@ -1968,7 +1999,7 @@ div {
 }
   </style>
    <div class = "container">
-      <div>
+      <div id="motto">
   
     <h1 style="font-size:5vw;color:grey; font-family: 'Merriweather', serif;margin-left:550px;max-width:100%;height:auto;margin-top:-600px;">Glam <br /> Pill <br /> Makeup</h1>
     <style>
