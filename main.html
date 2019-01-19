@@ -238,21 +238,30 @@ body.be-themes-layout-layout-border.single-page-version .single-page-nav-wrap {
 .top-header.page-template-page-splitscreen-right .layout-border .header-hero-section {
   left: calc(50% - 15px);
 } 
-  
+@media only screen and (max-width: 1600px) {
+  #new{
+    height: 860px;
+
+  }
+}
+@media only screen and (max-width: 1440px) {
+  #new{
+    height: 760px;
+
+  }
+}
  
 @media only screen and (max-width: 960px) {
   body.be-themes-layout-layout-border-header-top.single-page-version .single-page-nav-wrap,
   body.be-themes-layout-layout-border.single-page-version .single-page-nav-wrap {
     right: 35px;
   }
-  .xop-left{
-    background: url(images/960left.jpg);
-  }
-  .xop-right{
-    background: url(images/960right.jpg);
-  }
+
   #motto{
     display:none;
+  }
+  #new{
+    height:100px;
   }
   
   body.be-themes-layout-layout-border-header-top .sb-slidebar.sb-right, 
@@ -718,6 +727,12 @@ a.navigation-next-post-link {
     transition: all .2s ease-in-out;
 }
 }
+@media only screen and (max-width : 767px ) {
+  #new{
+    height:750px;
+  }
+}
+
 
 @media only screen and (max-width : 767px ) {
 
@@ -1893,7 +1908,7 @@ div.bbp-reply-header,
 						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
 					};</script>
 </head>
-<body class="home page-template-default page page-id-6 _masterslider _msp_version_3.2.2 header-solid no-section-scroll left-header left-strip-menu be-themes-layout-layout-wide opt-panel-cache-off menu_push_main" data-be-site-layout='layout-wide' data-be-page-template = 'page' >	
+<body class="home page-template-default page page-id-6 _masterslider _msp_version_3.2.2 header-solid no-section-scroll left-header left-strip-menu be-themes-layout-layout-wide opt-panel-cache-off menu_push_main" data-be-site-layout='layout-wide' data-be-page-template = 'page'>	
   
   
 
@@ -1931,7 +1946,7 @@ div.bbp-reply-header,
 </span>				</div>
 			</div>
 	    <div id="main-wrapper">
-				<div id="main" class="ajaxable layout-wide" style="height:750px">
+				<div id="new" class="">
 			<header id="header">
     <div id="header-inner-wrap" class=" "  >
                 <div id = "left-header-mobile" class="clearfix">            <div class="logo">
