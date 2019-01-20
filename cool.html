@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+        <div class="container">
+                <!-- Content here -->
+              </div>
+              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="crystal.mp4" type="video/mp4">
+                  </video>
+                 
+                 
+                 
+                </header>
+                
+                
+                <style>
+                header {
+                  position: relative;
+                  background-color: black;
+                  height: 75vh;
+                  min-height: 25rem;
+                  width: 100%;
+                  height:800px;
+                  overflow: hidden;
+                }
+                
+                header video {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  min-width: 500px;
+                  min-height: 500px;
+                  width: auto;
+                  height: auto;
+                  z-index: 0;
+                  -ms-transform: translateX(-50%) translateY(-50%);
+                  -moz-transform: translateX(-50%) translateY(-50%);
+                  -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);
+                }
+                
+                header .container {
+                  position: relative;
+                  z-index: 2;
+                }
+                
+                header .overlay {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  background-color: black;
+                  opacity: 0.5;
+                  z-index: 1;
+                }
+                
+                @media (pointer: coarse) and (hover: none) {
+                  header {
+                    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+                  }
+                  header video {
+                    display: none;
+                  }
+                }
+                </style>
+                
+                
+                
+                
+                
+    
+</body>
+</html>
