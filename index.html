@@ -177,52 +177,74 @@ header video{
 
 <html lang="en">
 <head>
-  <title>Galm Pill Makeup</title>
-  <!-- Latest compiled and minified CSS -->
+  <title>💎Glam Pill Makeup</title>
+  
+  <!-- <meta http-equiv="refresh" content="7;url=main.html" />  -->
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- <style>
-    .container-fluid{
-        padding-left:0px;
-        padding-right:0px;
-    }
 
-    .noPadding{
-      padding:0px 0px;
-    }
-
-    .row{
-      margin-left: 0px;
-      margin-right:0px;
-    }
-
-    video{
-      min-height:100vh;
-      width: 100vw;
-      object-fit: cover;
-    }
-
-    .video-holder{
-      min-height: 100vh;
-      background: rgba(0,0,0,.1);
-      position: absolute;
-      min-width: 100vw;
-      left: 50%;
-      top: 50%;
-
-      transform: translateX(-50%) translateY(-50%);
-    }
-
-    .holder{
-      min-height: 100vh;
-      overflow-x:auto;
-      height: 100%;
-    }
-  </style> -->
 </head>
-<body>
-    <video playsinline autoplay loop muted style="min-width:100%; min-height:100%;" >
+<body style="background-color:black">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12" style="text-align:center;font-size:6vw;color:grey; font-family: 'Merriweather', serif;">
+              <h1 >Glam <br /> Pill <br /> Makeup</h1>
+       </div>
+        </div>
+      </div>
+    <video playsinline autoplay loop muted >
         <source type="video/mp4" src="crystal.mp4">
-        <source type="video/webm" src="//bg.cdn.ustudio.com/app/transcodes/TuX1xml2yZsS.webm">
+        <source type="video/webm" src="crystal.webm">
      </video>
+
+     <style>
+     @media only screen and (min-width : 320px) {
+      video{
+min-width: 100%;
+min-height: 100%;
+margin-left:-37px;
+
+} 
+     }
+ @media only screen and (min-width : 768px) 
+{
+  video{
+min-width: 500px;
+min-height: 500px;
+margin-left:-50px;
+margin-top:30px;
+} 
+} 
+
+@media only screen and (min-width : 1024px) 
+ {
+  video{
+width: 600px;
+height: 600px;
+margin-left:220px;
+margin-top:2px;
+} 
+} 
+
+@media only screen and (min-width : 1440px) {
+  video{
+width: 600px;
+height: 600px;
+margin-left:420px;
+} 
+   
+} 
+
+
+@media only screen and (min-width : 1824px) {
+  video{
+width: 600px;
+height: 600px;
+margin-left:620px;
+} 
+}
+
+     
+     </style>
 </body>
 </html>
