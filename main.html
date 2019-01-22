@@ -2052,7 +2052,39 @@ div.bbp-reply-header,
     flex: 1;
     padding: 1rem;
     transition: all .2s ease-in-out;
-  } */
+  }  */
+
+   @media only screen and (min-width : 1600px) {
+    section {
+    height: 100%;
+  }
+  .xop-container {
+    display: flex;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+    .xop-left {
+    background:url(images/left10.jpg); 
+    height:1000px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+  }
+  .xop-right {
+    background: url(images/right27.jpg);
+    background-size: cover;
+    height:auto;
+    background-position: center;
+    flex: 1;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+  } 
+}  
     </style>
      
   <div class = "container">
@@ -2071,6 +2103,9 @@ div.bbp-reply-header,
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 50px;
   } */
+
+  
+   
    </style>
   </div>
     </div>
