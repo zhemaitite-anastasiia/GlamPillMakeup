@@ -175,9 +175,9 @@ header video{
 
 </html> --> 
 
-<html lang="hu">
+<html lang="en">
 <head>
-  <title>Responsive Video Background</title>
+  <title>Galm Pill Makeup</title>
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- <style>
@@ -220,76 +220,24 @@ header video{
   </style> -->
 </head>
 <body>
-    <div class="video-responsive">
-        <video class="video" muted="muted" loop="loop" autoplay="autoplay">
-        <source src="crystal.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-        </video>
-      
-      <canvas class="canvas"></canvas>        
-      
-      <div id="over_video">Fucking Crystal</div>
-      </div>
-      <script src="canvas-video-player.js"></script>
-<script>
+    <h1>Glam Pill Makeup</h1>
+    <div style="background:  url(images/crystal.gif) no-repeat center center fixed;widows: 300px;
+    height:600px">
 
-var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
-
-if (isIOS) {
-
-    var canvasVideo = new CanvasVideoPlayer({
-        videoSelector: '.video',
-        canvasSelector: '.canvas',
-        timelineSelector: false,
-        autoplay: true,
-        makeLoop: true,
-        pauseOnClick: false,
-        audio: false
-    });
-
-}else {
-
-    // Use HTML5 video
-    document.querySelectorAll('.canvas')[0].style.display = 'none';
-
-}   
-
-</script>
+    </div>
 <style>
-body {
-background: #000;
-padding:0;
-margin:0;
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+
+h1{
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 3em;
+  margin: .2em .5em;
+  color: rgba(0,0,0, 0.3);
 }
-.video-responsive {
-padding-bottom: 56.25%;
-position: relative;
-width: 100%;
+body {
+    height: 1000px;
 }
 
-.canvas,
-.video {
-height: 100%;
-left: 0;
-position: absolute;
-top: 0;
-width: 100%;
-background: #000;
-z-index: 5;
-}
-#over_video{
-position: absolute;
-width: 100%;
-height: 100%;
-text-align: center;
-top: 0;
-z-index: 10;
-font-size: 12vw;
-color: #FFF;
-font-family: Verdana, Arial, Helvetica, sans-serif;
-margin-top: 20%;
-text-shadow: 4px 4px 4px #5C433B;
-}
 </style>
 </body>
 </html>
